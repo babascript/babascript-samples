@@ -1,0 +1,11 @@
+{
+  "name": "babascript-samples",
+  "version": "0.0.0",
+  "description": "sample programs for babascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Takumi Baba",
+  "license": "MIT"
+}
