@@ -6,24 +6,13 @@ vc = new Baba.VC "masuilab"
 
 members = new Baba.Script vc
 week = ["月","火","水","木","金"]
-# list = [
-#   "月曜1限", "月曜2限", "月曜3限" , "月曜4限", "月曜5限", "月曜6限",
-#   "火曜1限", "火曜2限", "火曜3限" , "火曜4限", "火曜5限", "火曜6限",
-#   "水曜1限", "水曜2限", "水曜3限" , "水曜4限", "水曜5限", "水曜6限",
-#   "木曜1限", "木曜2限", "木曜3限" , "木曜4限", "木曜5限", "木曜6限",
-#   "金曜1限", "金曜2限", "金曜3限" , "金曜4限", "金曜5限", "金曜6限"
-]
-
-# 複数選択UIが必要になりそう
 
 MEMBER = 3
 
 members.参加可能な日程を選んでください {broadcast: MEMBER}, (results)->
-  console.log results
   workers = _.pluck results, "worker"
   b = []
   work = []
-  console.log workers
   for i in [0..workers.length-1]
     worker = workers[i]
     b.push (callback)=>
